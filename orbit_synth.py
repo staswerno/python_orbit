@@ -14,7 +14,7 @@ def create_orbit_beep(duration=0.2, frequency=880, sample_rate=44100):
     
     # Add subtle frequency modulation
     mod_freq = 8  # 8 Hz modulation
-    mod_depth = 20  # 20 Hz depth
+    mod_depth = 10  # 10 Hz depth
     fm = frequency + mod_depth * np.sin(2 * np.pi * mod_freq * t)
     modulated = sawtooth(2 * np.pi * fm * t)
     
